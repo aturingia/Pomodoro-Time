@@ -66,10 +66,9 @@ body {
     display: grid;
     gap: 10px;
     grid-template: 
-    "work-timer" 30%
-    "short-break-timer" 30%
-    "long-break-timer" 30% /
-        390px;
+    "work-timer" 
+    "short-break-timer" 
+    "long-break-timer";
   }
 
   @media(min-width: 600px) {
