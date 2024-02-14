@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Triple Temporizador Pomodoro</title>
+<link rel="shorcut icon" size="16x16 24x24 32x32 48x48" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="flipclock.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="header">
+    <h1>Pomodoro</h1>
+  </header>
+<div class="timer-container">
+  <div class="timer" id="work-timer">
+    <h2>Trabajo</h2>
+    <div class="clock"></div>
+    <div class="timer-controls">
+      <button onclick="startWorkTimer()">Start</button>
+      <button onclick="stopWorkTimer()">Stop</button>
+      <button onclick="resetWorkTimer()">Clear</button>
+    </div>
+  </div>
+  <div class="timer" id="short-break-timer">
+    <h2>Descanso Corto</h2>
+    <div class="clock"></div>
+    <div class="timer-controls">
+      <button onclick="startShortBreakTimer()">Start</button>
+      <button onclick="stopShortBreakTimer()">Stop</button>
+      <button onclick="resetShortBreakTimer()">Clear</button>
+    </div>
+  </div>
+  <div class="timer" id="long-break-timer">
+    <h2>Descanso Largo</h2>
+    <div class="clock"></div>
+    <div class="timer-controls">
+      <button onclick="startLongBreakTimer()">Start</button>
+      <button onclick="stopLongBreakTimer()">Stop</button>
+      <button onclick="resetLongBreakTimer()">Clear</button>
+    </div>
+  </div>
+</div>
+<audio id="alarm" src="alarma.mp3"></audio>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="flipclock.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
