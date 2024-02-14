@@ -18,6 +18,7 @@ body {
 }
 
 .timer-container {
+    padding-top: 0;
     text-align: center;
     margin-top: 50px;
   }
@@ -65,9 +66,10 @@ body {
     display: grid;
     gap: 10px;
     grid-template: 
-    "work-timer" 
-    "short-break-timer"
-    "long-break-timer";
+    "work-timer" 30%
+    "short-break-timer" 30%
+    "long-break-timer" 30% /
+        390px;
   }
 
   @media(min-width: 600px) {
