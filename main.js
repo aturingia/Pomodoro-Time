@@ -5,7 +5,7 @@ var alarm = document.getElementById('alarm');
 
 function startWorkTimer() {
   if (!workClock) {
-    workClock = createClock('work-timer', 25 * 60, function() {
+    workClock = createClock('work-timer', 20 * 60, function() {
       playAlarm();
     });
   }
@@ -22,7 +22,7 @@ function stopWorkTimer() {
 function resetWorkTimer() {
   if (workClock) {
     workClock.stop();
-    workClock.setTime(25 * 60);
+    workClock.setTime(20 * 60);
     alarm.pause();
     //workClock.start();
   }
